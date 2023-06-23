@@ -112,7 +112,7 @@
     \item{New $\psi(3770)$ data has been added ($\SI{3}{\per\femto\barn}\to\SI{8}{\per\femto\barn}$)}
     \item{All single and double tag yields have been (re)fitted}
     \item{New strong phase fit has been developed}
-    \item{Toy studies with new fit}
+    \item{Toy studies with new fit (see backup)}
     \item{\underline{Preliminary result of $c_i$ and $s_i$ is ready}}
   \end{enumerate}
 \end{frame}
@@ -614,123 +614,6 @@ sin(\delta_D)\big)\Big) \\
   \end{itemize}
 \end{frame}
 
-\section{Toy studies}
-\begin{frame}{Toy studies}
-  \begin{center}
-    {\huge Toy studies}
-  \end{center}
-\end{frame}
-
-\section{Toy studies}
-\begin{frame}{Toy studies}
-  \vspace{0.0cm}
-  {\large Aim of toy studies:}
-  \begin{enumerate}
-    \item{Check fit convergence}
-    \item{Check error coverage}
-    \item{Correct any biases in fitted parameters}
-  \end{enumerate}
-  \vspace{0.5cm}
-  {\large Unfortunately, in this analysis we cannot simply generate Poisson-distributed DT yields:}
-  \begin{enumerate}
-    \item{Asymmetric uncertainties}
-    \item{Large background-to-signal}
-    \item{Multi-body tags with low yields require a full unbinned likelihood}
-  \end{enumerate}
-  \vspace{0.5cm}
-  \begin{center}
-    {\Large Solution: Generate toy datasets for each double tag fit}
-  \end{center}
-\end{frame}
-
-\begin{frame}{Toy studies}
-  \begin{figure}
-    \centering
-    \begin{subfigure}{0.5\textwidth}
-      \centering
-      \includegraphics[width=1.0\textwidth]{Plots/KK_ToyYields_Bin4.png}
-      \caption{Input yield: $13.9$}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-      \centering
-      \includegraphics[width=1.0\textwidth]{Plots/KSpi0_ToyYields_Bin4.png}
-      \caption{Input yield: $8.6$}
-    \end{subfigure}
-    \caption{Fitted yields in toy datasets for the (left) $KK$ and (right) $K_S\pi^0$ tags}
-  \end{figure}
-  \vspace{-0.4cm}
-  \begin{enumerate}
-    \item{No biases are observed}
-    \item{Distributions are asymmetric $\implies$ uncertainties are asymmetric}
-    \item{$KK$ uncertainty is non-Poisson because of large backgrounds from $q\bar{q}$}
-    \item{$K_S\pi^0$ has small backgrounds, so observed yields Poisson distributed}
-  \end{enumerate}
-\end{frame}
-
-\begin{frame}{Toy studies}
-  \begin{figure}
-    \centering
-    \begin{subfigure}{0.5\textwidth}
-      \centering
-      \includegraphics[width=0.75\textwidth,trim={0 0 0 0},clip=true]{Plots/c1_ToyFits_pull.pdf}
-      \caption{$c_1$ pulls}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-      \centering
-      \includegraphics[width=0.75\textwidth,trim={0 0 0 0},clip=true]{Plots/c2_ToyFits_pull.pdf}
-      \caption{$c_2$ pulls}
-    \end{subfigure}
-    \begin{subfigure}{0.5\textwidth}
-      \centering
-      \includegraphics[width=0.75\textwidth,trim={0 0 0 0},clip=true]{Plots/c3_ToyFits_pull.pdf}
-      \caption{$c_3$ pulls}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-      \centering
-      \includegraphics[width=0.75\textwidth,trim={0 0 0 0},clip=true]{Plots/c4_ToyFits_pull.pdf}
-      \caption{$c_4$ pulls}
-    \end{subfigure}
-  \end{figure}
-\end{frame}
-
-\begin{frame}{Toy studies}
-  \begin{figure}
-    \centering
-    \begin{subfigure}{0.5\textwidth}
-      \centering
-      \includegraphics[width=0.75\textwidth]{Plots/s1_ToyFits_pull.pdf}
-      \caption{$s_1$ pulls}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-      \centering
-      \includegraphics[width=0.75\textwidth]{Plots/s2_ToyFits_pull.pdf}
-      \caption{$s_2$ pulls}
-    \end{subfigure}
-    \begin{subfigure}{0.5\textwidth}
-      \centering
-      \includegraphics[width=0.75\textwidth]{Plots/s3_ToyFits_pull.pdf}
-      \caption{$s_3$ pulls}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-      \centering
-      \includegraphics[width=0.75\textwidth]{Plots/s4_ToyFits_pull.pdf}
-      \caption{$s_4$ pulls}
-    \end{subfigure}
-  \end{figure}
-\end{frame}
-
-\begin{frame}{Toy studies}
-  \vspace{0.0cm}
-  {\Large What do the toy fits tell us?}
-  \vspace{1.0cm}
-  \begin{enumerate}
-    \setlength\itemsep{2.0em}
-    \item{Both $c_i$ and $s_i$ pulls has asymmetric tails}
-    \item{Effect is small in $c_i$ and a small bias correction will be sufficient}
-    \item{$s_i$ has a small overcoverage, but a large tail, so special care is required}
-  \end{enumerate}
-\end{frame}
-
 \section{Fit results}
 \begin{frame}{Fit results}
   \begin{center}
@@ -782,7 +665,7 @@ sin(\delta_D)\big)\Big) \\
     \item{$K_i$, which are constrained by flavour tags, are free parameters}
     \item{Corrections for DCS decays, which depend on the strong phases $\delta_D$, are part of the fit}
     \item{We could instead treat $\delta_D$ as a free parameter, and make a simultaneous measurement}
-    \item{LHCb $\gamma$ and charm combination: $\delta_D^{K\pi} = (190.2^{+2.8}_{2.8})^\circ$}
+    \item{LHCb $\gamma$ and charm combination: $\delta_D^{K\pi} = (190.2^{+2.8}_{-2.8})^\circ$}
     \item{Free parameters: $r_D\cos(\delta_{K\pi})$ and $r_D\sin(\delta_{K\pi})$}
   \end{itemize}
   \vspace{0.5cm}
@@ -814,6 +697,15 @@ sin(\delta_D)\big)\Big) \\
   Assume $0.3\%$ for each track and $1.0\%$ ($0.3\%$) for each charged kaon (pion)\\~\\
   Branching fraction measurement: $\mathcal{B} = (2.76 \pm 0.05 \pm 0.05)\times 10^{-3}$\\~\\
   Cross check with single tag yield and integrated luminosity: $N^{\rm ST} = 29227 \pm 268\implies \mathcal{B} = 2.70 \pm 0.04$
+\end{frame}
+
+\begin{frame}{Branching fraction measurement}
+  \begin{figure}
+    \includegraphics[width=0.6\textwidth,trim={0 30cm 0 0},clip=true]{Plots/KKpipi_Focus.pdf}
+    \caption{Plot from Phys. Lett. B 610 (2005) 225 ``Study of the $D^0\to K^+K^-\pi^+\pi^-$ decay'' by FOCUS}
+  \end{figure}
+  \vspace{-0.5cm}
+  I suspect FOCUS missed the $D^0\to K^-\pi^+\pi^-\pi^+\pi^0$ background, but it's difficult to tell from such an old measurement...
 \end{frame}
 
 \section{Systematics}
@@ -861,7 +753,7 @@ sin(\delta_D)\big)\Big) \\
   \begin{enumerate}
     \setlength\itemsep{1.0em}
     \item{I have presented a complete analysis of $c_i$ and $s_i$ for $D^0\to KK\pi\pi$}
-    \item{I have developed a new fit procedure, inspired by the $\gamma$ analyses of $D\to K_Shh$ and $D\to K\pi\pi\pi$}
+    \item{I have developed a new fit procedure, inspired by the $\gamma$ analyses of $B^\pm\to[K_Shh]_Dh^\pm$ and $B^\pm\to[K\pi\pi\pi]_Dh^\pm$}
     \item{There is limited sensitivity to $\delta_D^{K\pi}$, but we expect a more competitive measurements when using this method on $K_S\pi\pi$}
     \item{The $D^0\to KK\pi\pi$ BF, which is nuisance parameter, turns out to be better than the PDG value}
     \item{Systematic uncertainties are an order of magnitude smaller than the statistical uncertainties}
@@ -884,6 +776,116 @@ sin(\delta_D)\big)\Big) \\
   \begin{center}
     {\huge Thanks for your attention!}
   \end{center}
+\end{frame}
+
+\section{Backup}
+\begin{frame}{Backup: Toy studies}
+  \vspace{0.0cm}
+  {\large Aim of toy studies:}
+  \begin{enumerate}
+    \item{Check fit convergence}
+    \item{Check error coverage}
+    \item{Correct any biases in fitted parameters}
+  \end{enumerate}
+  \vspace{0.5cm}
+  {\large Unfortunately, in this analysis we cannot simply generate Poisson-distributed DT yields:}
+  \begin{enumerate}
+    \item{Asymmetric uncertainties}
+    \item{Large background-to-signal}
+    \item{Multi-body tags with low yields require a full unbinned likelihood}
+  \end{enumerate}
+  \vspace{0.5cm}
+  \begin{center}
+    {\Large Solution: Generate toy datasets for each double tag fit}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Backup:Toy studies}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=1.0\textwidth]{Plots/KK_ToyYields_Bin4.png}
+      \caption{Input yield: $13.9$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=1.0\textwidth]{Plots/KSpi0_ToyYields_Bin4.png}
+      \caption{Input yield: $8.6$}
+    \end{subfigure}
+    \caption{Fitted yields in toy datasets for the (left) $KK$ and (right) $K_S\pi^0$ tags}
+  \end{figure}
+  \vspace{-0.4cm}
+  \begin{enumerate}
+    \item{No biases are observed}
+    \item{Distributions are asymmetric $\implies$ uncertainties are asymmetric}
+    \item{$KK$ uncertainty is non-Poisson because of large backgrounds from $q\bar{q}$}
+    \item{$K_S\pi^0$ has small backgrounds, so observed yields Poisson distributed}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Backup:Toy studies}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.75\textwidth,trim={0 0 0 0},clip=true]{Plots/c1_ToyFits_pull.pdf}
+      \caption{$c_1$ pulls}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.75\textwidth,trim={0 0 0 0},clip=true]{Plots/c2_ToyFits_pull.pdf}
+      \caption{$c_2$ pulls}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.75\textwidth,trim={0 0 0 0},clip=true]{Plots/c3_ToyFits_pull.pdf}
+      \caption{$c_3$ pulls}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.75\textwidth,trim={0 0 0 0},clip=true]{Plots/c4_ToyFits_pull.pdf}
+      \caption{$c_4$ pulls}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Backup:Toy studies}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.75\textwidth]{Plots/s1_ToyFits_pull.pdf}
+      \caption{$s_1$ pulls}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.75\textwidth]{Plots/s2_ToyFits_pull.pdf}
+      \caption{$s_2$ pulls}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.75\textwidth]{Plots/s3_ToyFits_pull.pdf}
+      \caption{$s_3$ pulls}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.75\textwidth]{Plots/s4_ToyFits_pull.pdf}
+      \caption{$s_4$ pulls}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Backup:Toy studies}
+  \vspace{0.0cm}
+  {\Large What do the toy fits tell us?}
+  \vspace{1.0cm}
+  \begin{enumerate}
+    \setlength\itemsep{2.0em}
+    \item{Both $c_i$ and $s_i$ pulls has asymmetric tails}
+    \item{Effect is small in $c_i$ and a small bias correction will be sufficient}
+    \item{$s_i$ has a small overcoverage, but a large tail, so special care is required}
+  \end{enumerate}
 \end{frame}
 
 \end{document}
